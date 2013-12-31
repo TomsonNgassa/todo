@@ -26,6 +26,7 @@ describe('Todo controllers', function() {
      });
 
      it('It should one remaining todo', function() {
+         console.log("It is ok");
           expect(scope.remaining()).toEqual(1);
      });
   });
