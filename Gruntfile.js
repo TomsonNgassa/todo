@@ -32,9 +32,13 @@ module.exports = function(grunt) {
 
           continuous: {
             singleRun: true,
-            configFile: 'config/karma.conf.js'
+            configFile: 'config/karma.conf.js',
+            reporters: ['dots', 'junit'],
+                  junitReporter: {
+                  outputFile: 'test-results.xml'
+              }
           }
-    },
+      },
     protractor: {
           options: {
               configFile: "node_modules/protractor/referenceConf.js", // Default config file

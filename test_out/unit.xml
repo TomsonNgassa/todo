@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="unit" timestamp="2013-12-31T14:36:32" id="0" hostname="TomsonNgassaPC" tests="4" errors="0" failures="0" time="0.031">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"/>
+    </properties>
+    <testcase name="It should create todo model with 2 todos" time="0.016" classname="unit Chrome 31.0.1650 (Windows 7).Todo controllers TodoCtrl"/>
+    <testcase name="It should have 2 todos" time="0.015" classname="unit Chrome 31.0.1650 (Windows 7).Todo controllers TodoCtrl"/>
+    <testcase name="It should add a new todo" time="0" classname="unit Chrome 31.0.1650 (Windows 7).Todo controllers TodoCtrl"/>
+    <testcase name="It should one remaining todo" time="0" classname="unit Chrome 31.0.1650 (Windows 7).Todo controllers TodoCtrl"/>
+    <system-out><![CDATA[IE 7.0.0 (Windows 7) LOG: LOG
+ 'ok it is working',Firefox 25.0.0 (Windows 7) LOG: LOG
+ 'ok it is working',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'ok it is working'
+]]></system-out>
+    <system-err/>
+  </testsuite>
+  <testsuite name="IE 7.0.0 (Windows 7)" package="unit" timestamp="2013-12-31T14:36:32" id="0" hostname="TomsonNgassaPC" tests="4" errors="0" failures="0" time="0.016">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E)"/>
+    </properties>
+    <testcase name="It should create todo model with 2 todos" time="0.012" classname="unit IE 7.0.0 (Windows 7).Todo controllers TodoCtrl"/>
+    <testcase name="It should have 2 todos" time="0.001" classname="unit IE 7.0.0 (Windows 7).Todo controllers TodoCtrl"/>
+    <testcase name="It should add a new todo" time="0.002" classname="unit IE 7.0.0 (Windows 7).Todo controllers TodoCtrl"/>
+    <testcase name="It should one remaining todo" time="0.001" classname="unit IE 7.0.0 (Windows 7).Todo controllers TodoCtrl"/>
+    <system-out><![CDATA[IE 7.0.0 (Windows 7) LOG: LOG
+ 'ok it is working'
+]]></system-out>
+    <system-err/>
+  </testsuite>
+  <testsuite name="Firefox 25.0.0 (Windows 7)" package="unit" timestamp="2013-12-31T14:36:32" id="0" hostname="TomsonNgassaPC" tests="4" errors="0" failures="0" time="0.02">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0"/>
+    </properties>
+    <testcase name="It should create todo model with 2 todos" time="0.014" classname="unit Firefox 25.0.0 (Windows 7).Todo controllers TodoCtrl"/>
+    <testcase name="It should have 2 todos" time="0.002" classname="unit Firefox 25.0.0 (Windows 7).Todo controllers TodoCtrl"/>
+    <testcase name="It should add a new todo" time="0.002" classname="unit Firefox 25.0.0 (Windows 7).Todo controllers TodoCtrl"/>
+    <testcase name="It should one remaining todo" time="0.002" classname="unit Firefox 25.0.0 (Windows 7).Todo controllers TodoCtrl"/>
+    <system-out><![CDATA[IE 7.0.0 (Windows 7) LOG: LOG
+ 'ok it is working',Firefox 25.0.0 (Windows 7) LOG: LOG
+ 'ok it is working'
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
