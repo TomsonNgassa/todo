@@ -15,7 +15,6 @@ module.exports = function (config) {
             'app/lib/angular/angular-scenario.js'
         ],
 
-
         autoWatch: true,
 
         frameworks: ['jasmine'],

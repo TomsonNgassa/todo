@@ -17,7 +17,6 @@ exports.config = {
     //specs: ['mocha/onMocha.js'],
     specs: ['../test/e2e/protractor.js'],
 
-
     // Options to be passed to Jasmine-node.
     jasmineNodeOpts: {
         showColors: true,
