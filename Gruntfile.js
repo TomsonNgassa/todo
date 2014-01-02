@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+  "use strict";
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -60,18 +61,33 @@ module.exports = function(grunt) {
       files: ['Gruntfile.js', 'app/js/*.js', 'test/**/*.js'],
       options: {
         // options here to override JSHint defaults
+          "boss": true,
+          "node": true,
+          "strict": true,
+          curly: "true",
+          eqnull : "true",
+          "maxlen": 100,  //issue
+          "unused": true,
+          "eqeqeq": "true",
+          "onecase": "true",
+           //"indent":  10,
+          //"white": true,
+          //"smarttabs": true,
+          //"newcap": false,
+           "undef":  true,
         globals: {
-            "boss": true,
-            "node": true,
-            "strict": true,
-            "white": true,
-            "smarttabs": true,
-            "maxlen": 100,
-            "newcap": false,
-            "undef":  true,
-            "unused": true,
-            "onecase": true,
-            "indent":  10
+            "describe"   : false,
+            "it"         : false,
+            "by"         : false,
+            "browser"    : false,
+            "expect"     : false,
+            "before"     : false,
+            "beforeEach" : false,
+            "after"      : false,
+            "afterEach"  : false,
+            "inject"     : false,
+            "element"    : false,
+            "angular"    : false
         }
       }
     },
@@ -90,6 +106,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-protractor-runner');
 
   grunt.registerTask('default', ['jshint','karma:continuous','protractor:e2e','concat', 'uglify']);
+  grunt.registerTask('compressAndMinify', ['concat', 'uglify']);
 
 };
 

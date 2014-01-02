@@ -4,7 +4,7 @@ describe('Todo App', function() {
     'use strict';
 
     describe('list view', function() {
-        var phoneList, todoList ;
+        //var phoneList, todoList ;
 
         beforeEach(function() {
             browser.get('http://localhost:63342/ANGULARJS/todo/app/index.html');

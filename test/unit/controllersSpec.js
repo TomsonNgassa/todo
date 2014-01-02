@@ -16,7 +16,8 @@ describe('Todo controllers', function() {
       }));
 
       it('It should create todo model with 2 todos', function() {
-        expect(scope.todos).toEqual([ {text:'learn angular', done:true}, {text:'build an angular app', done:false}]);
+        expect(scope.todos).toEqual([ {text:'learn angular', done:true},
+            {text:'build an angular app', done:false}]);
      });
 
      it('It should have 2 todos', function() {

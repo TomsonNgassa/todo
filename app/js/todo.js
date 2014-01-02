@@ -2,7 +2,7 @@
  * Created by tomson.ngassa on 12/30/13.
  */
 
-var todoApp = angular.module("todoApp", [])
+angular.module("todoApp", [])
     .controller('TodoCtrl', function($scope){
 
         'use strict';
@@ -28,7 +28,9 @@ var todoApp = angular.module("todoApp", [])
             var oldTodos = $scope.todos;
             $scope.todos = [];
             angular.forEach(oldTodos, function(todo) {
-                if (!todo.done) $scope.todos.push(todo);
+                if (!todo.done){
+                    $scope.todos.push(todo);
+                }
             });
         };
     });
