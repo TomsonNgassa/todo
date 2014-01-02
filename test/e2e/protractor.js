@@ -1,6 +1,8 @@
-'use strict';
+
 
 describe('Todo App', function() {
+    'use strict';
+
     describe('list view', function() {
         var phoneList, todoList ;
 

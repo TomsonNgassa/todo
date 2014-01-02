@@ -19,8 +19,13 @@ module.exports = function (config) {
 
         frameworks: ['jasmine'],
 
-        browsers: ['Chrome', ],
+        browsers: ['Chrome'],
         //browsers: ['PhantomJS','Firefox', 'IE'],
+
+        junitReporter: {
+            outputFile: 'test_out/unit.xml',
+            suite: 'unit'
+        },
 
         plugins: [
             'karma-junit-reporter',
@@ -30,11 +35,6 @@ module.exports = function (config) {
             'karma-phantomjs-launcher',
             'karma-script-launcher',
             'karma-jasmine'
-        ],
-
-        junitReporter: {
-            outputFile: 'test_out/unit.xml',
-            suite: 'unit'
-        }
+        ]
     });
 };

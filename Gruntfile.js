@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
       karma: {
 
-          unit: {
+          dev: {
               configFile: 'config/karma.conf.js',
               autoWatch: true
           },
@@ -61,10 +61,17 @@ module.exports = function(grunt) {
       options: {
         // options here to override JSHint defaults
         globals: {
-          jQuery: true,
-          console: true,
-          module: true,
-          document: true
+            "boss": true,
+            "node": true,
+            "strict": true,
+            "white": true,
+            "smarttabs": true,
+            "maxlen": 100,
+            "newcap": false,
+            "undef":  true,
+            "unused": true,
+            "onecase": true,
+            "indent":  10
         }
       }
     },
@@ -77,16 +84,12 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  //grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-protractor-runner');
- 
-  //grunt.registerTask('test', ['jshint', 'qunit']);
 
-  //grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
-  grunt.registerTask('default', ['concat', 'uglify']);
+  grunt.registerTask('default', ['jshint','karma:continuous','protractor:e2e','concat', 'uglify']);
 
 };
 

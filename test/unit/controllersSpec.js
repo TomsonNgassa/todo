@@ -1,7 +1,10 @@
-'use strict';
+
 
 /* jasmine specs for controllers go here */
 describe('Todo controllers', function() {
+
+  'use strict';
+
   beforeEach(module('todoApp'));
 
   describe('TodoCtrl', function(){
@@ -21,7 +24,7 @@ describe('Todo controllers', function() {
      });
 
      it('It should add a new todo', function() {
-         scope.todos.push([ {text:'Jenkins integration', done:false}])
+         scope.todos.push([ {text:'Jenkins integration', done:false}]);
           expect(scope.todos.length).toEqual(3);
      });
 

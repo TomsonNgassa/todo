@@ -4,6 +4,9 @@
 
 var todoApp = angular.module("todoApp", [])
     .controller('TodoCtrl', function($scope){
+
+        'use strict';
+
         $scope.todos = [
             {text:'learn angular', done:true},
             {text:'build an angular app', done:false}];
