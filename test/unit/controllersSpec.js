@@ -25,6 +25,7 @@ describe('Todo controllers', function() {
      });
 
      it('It should add a new todo', function() {
+         console.log("ok");
          scope.todos.push([ {text:'Jenkins integration', done:false}]);
           expect(scope.todos.length).toEqual(3);
      });
