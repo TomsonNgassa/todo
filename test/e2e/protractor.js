@@ -4,7 +4,7 @@ describe('Todo App', function() {
     'use strict';
 
     describe('list view', function() {
-        //var phoneList, todoList ;
+        //var todoList ;
 
         beforeEach(function() {
             browser.get('http://localhost:63342/ANGULARJS/todo/app/index.html');
@@ -17,7 +17,7 @@ describe('Todo App', function() {
             todoInput.clear();
             todoInput.sendKeys('Integrate todo app in jenkins');
 
-            //browser.debugger();
+            browser.debugger();
             var todoBtn = element(by.name('add'));
             todoBtn.click();
 
@@ -28,7 +28,7 @@ describe('Todo App', function() {
                 expect(arr.length).toEqual(3);
             });
 
-            //browser.debugger();
+            browser.debugger();
         });
 
         it('should check a todo', function() {

@@ -61,6 +61,7 @@ module.exports = function(grunt) {
       files: ['Gruntfile.js', 'app/js/*.js', 'test/**/*.js'],
       options: {
         // options here to override JSHint defaults
+        //Specify which option to turn off or on
           "boss": true,
           "node": true,
           "strict": true,
@@ -75,6 +76,7 @@ module.exports = function(grunt) {
           //"smarttabs": true,
           //"newcap": false,
            "undef":  true,
+          //declaring global variable
         globals: {
             "describe"   : false,
             "it"         : false,

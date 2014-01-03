@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <testsuites>
-  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="undefined" timestamp="2014-01-03T13:31:13" id="0" hostname="TomsonNgassaPC" tests="4" errors="0" failures="0" time="0.016">
+  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="undefined" timestamp="2014-01-03T14:39:49" id="0" hostname="TomsonNgassaPC" tests="4" errors="0" failures="0" time="0.016">
     <properties>
       <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"/>
     </properties>
